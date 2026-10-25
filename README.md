@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-Incident & System Reporting
+
+OSupport is an incident and system-reporting tool that collects host and environment details into a structured report for support and triage. It gathers platform, resource and network information via psutil and can relay a report to a configured destination. It runs as a desktop application in the OWLSec theme.
 
 ---
 
 ## ✨ Features
 
-- Incident and system reporting tool with optional Telegram delivery (tokens via env, dry-run default)
+
+- One-click collection of system and environment details (platform, resources, network)
+- Uses psutil for live host metrics and socket information
+- Incident-report composition for support and triage workflows
+- Optional relay of reports to a configured endpoint (token/chat id via environment variables)
+- Attachable screenshot/image support in the report
+- Desktop UI in the OWLSec dark theme with an offline --self-test
 
 ---
 
@@ -37,8 +44,11 @@ Incident & System Reporting
 
 ## 🚀 Usage
 
+
 ```bash
 ./OSupport
+./OSupport --self-test
+./OSupport --help
 ```
 
 ---
